@@ -1,6 +1,6 @@
 🦷 ToothShadeMatcher
 
-ToothShadeMatcher is an open-source project aimed at creating a tool to compare tooth shades across different dental shade guides (Vita Classical A-D, Vita 3D-Master, Ivoclar Chromascop) using CIELAB color space.
+ToothShadeMatcher is an open-source project aimed at creating a tool to compare tooth shades across different dental shade guides (Vita Classical A-D, Vita 3D-Master, Ivoclar Chromascop ) using CIELAB color space.
 
 The current version is a simple Java console application.
 The long-term goal is to build a full mobile app using Flutter for Android and iOS.
