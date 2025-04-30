@@ -18,33 +18,6 @@ Evolve into a full mobile app with Flutter,
 
 Future plans include camera integration and AI-based color detection.
 
-📦 Current Project Structure
-bash
-Kopiuj
-Edytuj
-/toothshade-matcher
-  |- src/
-      |- ColorEntry.java
-      |- ColorMatcher.java
-  |- sample_data/
-      |- vita_classical.csv
-      |- chromascop_colors.csv
-      |- vita_3d_master_colors.csv
-  |- README.md
-🚀 How to Run (Java CLI App)
-Compile the project:
-
-bash
-Kopiuj
-Edytuj
-javac src/*.java
-Run the application:
-
-bash
-Kopiuj
-Edytuj
-java -cp src ColorMatcher
-Provide paths to CSV files and enter a shade symbol when prompted.
 
 🔥 Roadmap
  Move shade comparison logic to a RESTful backend (Spring Boot or Dart backend),
