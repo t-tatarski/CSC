@@ -65,12 +65,12 @@
     <!-- Karty kolorów -->
     <g filter="url(#dropShadow)" transform="translate(-140, -40) rotate(-15)">
       <rect x="0" y="0" width="140" height="80" rx="5" ry="5" fill="url(#colorCardPattern)" stroke="#FFFFFF" stroke-width="2" />
-      <text x="70" y="95" font-family="Arial" font-size="14" fill="#333333" text-anchor="middle">VITA Classical</text>
+      <text x="70" y="95" font-family="Arial" font-size="14" fill="#333333" text-anchor="middle">A-D</text>
     </g>
     
     <g filter="url(#dropShadow)" transform="translate(0, -10) rotate(5)">
       <rect x="0" y="0" width="140" height="80" rx="5" ry="5" fill="url(#colorCardPattern2)" stroke="#FFFFFF" stroke-width="2" />
-      <text x="70" y="95" font-family="Arial" font-size="14" fill="#333333" text-anchor="middle">3D Master</text>
+      <text x="70" y="95" font-family="Arial" font-size="14" fill="#333333" text-anchor="middle">3D</text>
     </g>
     
     <!-- Ząb centralny -->
@@ -94,8 +94,8 @@
   
   <!-- Nazwa aplikacji -->
   <g transform="translate(180, 450)">
-    <text x="0" y="0" font-family="Arial" font-size="34" font-weight="bold" fill="#2C3E50" text-anchor="middle">DentalShade</text>
-    <text x="0" y="30" font-family="Arial" font-size="18" fill="#5D6D7E" text-anchor="middle">Porównywarka Odcieni Zębowych</text>
+    <text x="0" y="0" font-family="Arial" font-size="34" font-weight="bold" fill="#2C3E50" text-anchor="middle">ShadeGuide</text>
+    <text x="0" y="30" font-family="Arial" font-size="18" fill="#5D6D7E" text-anchor="middle">Tooth Shade Comparator</text>
   </g>
   
   <!-- Lupa z loupe efektem pokazująca powiększony fragment koloru -->
@@ -123,5 +123,5 @@
   </g>
   
   <!-- Copyright -->
-  <text x="180" y="620" font-family="Arial" font-size="10" fill="#5D6D7E" text-anchor="middle">© 2025 DentalShade - Wszystkie prawa zastrzeżone</text>
+  <text x="180" y="620" font-family="Arial" font-size="10" fill="#5D6D7E" text-anchor="middle">© Codent 2025 - Wszystkie prawa zastrzeżone</text>
 </svg>
