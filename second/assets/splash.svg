@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 360 640" xmlns="http://www.w3.org/2000/svg">
+  <!-- Tło z gradientem -->
+  <defs>
+    <linearGradient id="backgroundGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E8F4F8" />
+      <stop offset="100%" stop-color="#C5E4F3" />
+    </linearGradient>
+    
+    <!-- Gradient dla zęba -->
+    <linearGradient id="toothGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#F0F0F0" />
+    </linearGradient>
+    
+    <!-- Cień dla elementów -->
+    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="4" />
+      <feOffset dx="2" dy="2" result="offsetblur" />
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.3" />
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    
+    <!-- Wzór dla karty kolorów -->
+    <pattern id="colorCardPattern" patternUnits="userSpaceOnUse" width="140" height="80" patternTransform="rotate(0)">
+      <rect width="28" height="80" x="0" fill="#E6DAC9" /> <!-- A1 -->
+      <rect width="28" height="80" x="28" fill="#E0D0B7" /> <!-- A2 -->
+      <rect width="28" height="80" x="56" fill="#DBCA9E" /> <!-- A3 -->
+      <rect width="28" height="80" x="84" fill="#CEB77F" /> <!-- A4 -->
+      <rect width="28" height="80" x="112" fill="#D8C9A9" /> <!-- B3 -->
+    </pattern>
+    
+    <!-- Wzór dla drugiej karty kolorów -->
+    <pattern id="colorCardPattern2" patternUnits="userSpaceOnUse" width="140" height="80" patternTransform="rotate(0)">
+      <rect width="28" height="80" x="0" fill="#E1D4C9" /> <!-- C1 -->
+      <rect width="28" height="80" x="28" fill="#D8C8B8" /> <!-- C2 -->
+      <rect width="28" height="80" x="56" fill="#CBB8A2" /> <!-- C3 -->
+      <rect width="28" height="80" x="84" fill="#BDA78E" /> <!-- C4 -->
+      <rect width="28" height="80" x="112" fill="#C2B19D" /> <!-- D4 -->
+    </pattern>
+  </defs>
+  
+  <!-- Tło -->
+  <rect width="360" height="640" fill="url(#backgroundGradient)" />
+  
+  <!-- Estetyczny wzór dekoracyjny -->
+  <g opacity="0.07">
+    <path d="M0,80 Q180,40 360,120 T720,240 T1080,320 T1440,400 T1800,480 T2160,560 T2520,640 L2520,0 L0,0 Z" fill="#2C3E50" />
+    <path d="M0,160 Q180,120 360,200 T720,320 T1080,400 T1440,480 T1800,560 T2160,640 L2160,0 L0,0 Z" fill="#2C3E50" />
+  </g>
+  
+  <!-- Główna zawartość -->
+  <g transform="translate(180, 280)">
+    <!-- Obracający się element tła -->
+    <g>
+      <circle cx="0" cy="0" r="150" fill="#FFFFFF" opacity="0.2" />
+      <circle cx="0" cy="0" r="120" fill="#FFFFFF" opacity="0.3" />
+    </g>
+    
+    <!-- Karty kolorów -->
+    <g filter="url(#dropShadow)" transform="translate(-140, -40) rotate(-15)">
+      <rect x="0" y="0" width="140" height="80" rx="5" ry="5" fill="url(#colorCardPattern)" stroke="#FFFFFF" stroke-width="2" />
+      <text x="70" y="95" font-family="Arial" font-size="14" fill="#333333" text-anchor="middle">VITA Classical</text>
+    </g>
+    
+    <g filter="url(#dropShadow)" transform="translate(0, -10) rotate(5)">
+      <rect x="0" y="0" width="140" height="80" rx="5" ry="5" fill="url(#colorCardPattern2)" stroke="#FFFFFF" stroke-width="2" />
+      <text x="70" y="95" font-family="Arial" font-size="14" fill="#333333" text-anchor="middle">3D Master</text>
+    </g>
+    
+    <!-- Ząb centralny -->
+    <g filter="url(#dropShadow)" transform="translate(-30, -60)">
+      <path d="M30,0 
+               C45,0 60,10 60,30 
+               C60,60 50,80 50,110 
+               C50,125 40,130 30,130 
+               C20,130 10,125 10,110 
+               C10,80 0,60 0,30 
+               C0,10 15,0 30,0 Z" 
+            fill="url(#toothGradient)" stroke="#E0E0E0" stroke-width="1" />
+    </g>
+    
+    <!-- Nakładające się kolorowe kółka symbolizujące wybór koloru -->
+    <circle cx="-40" cy="30" r="25" fill="#E6DAC9" opacity="0.8" />
+    <circle cx="-15" cy="40" r="25" fill="#DBCA9E" opacity="0.8" />
+    <circle cx="10" cy="30" r="25" fill="#D8C9A9" opacity="0.8" />
+    <circle cx="-15" cy="20" r="25" fill="#E1D4C9" opacity="0.8" />
+  </g>
+  
+  <!-- Nazwa aplikacji -->
+  <g transform="translate(180, 450)">
+    <text x="0" y="0" font-family="Arial" font-size="34" font-weight="bold" fill="#2C3E50" text-anchor="middle">DentalShade</text>
+    <text x="0" y="30" font-family="Arial" font-size="18" fill="#5D6D7E" text-anchor="middle">Porównywarka Odcieni Zębowych</text>
+  </g>
+  
+  <!-- Lupa z loupe efektem pokazująca powiększony fragment koloru -->
+  <g transform="translate(260, 200)">
+    <!-- Rączka lupy -->
+    <rect x="20" y="35" width="40" height="10" rx="5" ry="5" fill="#5D6D7E" transform="rotate(45)" />
+    
+    <!-- Szkło lupy -->
+    <circle cx="0" cy="0" r="30" fill="#FFFFFF" stroke="#5D6D7E" stroke-width="5" />
+    
+    <!-- Powiększony kolor -->
+    <circle cx="0" cy="0" r="20" fill="#E0D0B7" />
+    
+    <!-- Odbicie światła na szkle -->
+    <circle cx="-10" cy="-10" r="5" fill="#FFFFFF" />
+  </g>
+  
+  <!-- Indykator ładowania na dole -->
+  <g transform="translate(180, 520)">
+    <rect x="-40" y="0" width="80" height="6" rx="3" ry="3" fill="#E0E0E0" />
+    <rect x="-40" y="0" width="50" height="6" rx="3" ry="3" fill="#3498DB">
+      <animate attributeName="width" values="0;80;80;80" dur="2s" repeatCount="indefinite" />
+      <animate attributeName="x" values="-40;-40;-40;-40" dur="2s" repeatCount="indefinite" />
+    </rect>
+  </g>
+  
+  <!-- Copyright -->
+  <text x="180" y="620" font-family="Arial" font-size="10" fill="#5D6D7E" text-anchor="middle">© 2025 DentalShade - Wszystkie prawa zastrzeżone</text>
+</svg>
