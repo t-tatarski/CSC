@@ -1,0 +1,38 @@
+name: dental_camera
+description: Aplikacja do robienia zdjęć dentystycznych z kontrolą ISO i przysłony
+
+publish_to: 'none' # Wyklucz publikację na pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # UI
+  cupertino_icons: ^1.0.5
+  
+  # Aparat
+  camera: ^0.10.5+2
+  
+  # Dostęp do plików i uprawnień
+  path_provider: ^2.0.15
+  path: ^1.8.3
+  permission_handler: ^10.4.3
+  
+  # Zapisywanie w galerii
+  image_gallery_saver: ^2.0.3
+  
+  # Formatowanie daty
+  intl: ^0.18.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.2
+
+flutter:
+  uses-material-design: true
